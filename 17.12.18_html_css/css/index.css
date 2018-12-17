@@ -1,0 +1,135 @@
+* {
+    padding:0;
+    margin:0;
+}
+/* section first:: top_navbar */
+.navbar{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar ul li {
+    float: right;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* hover */
+.navbar ul li a:hover {
+    background-color: #111;
+}
+
+/* section second:: section_bg */
+
+#section_bg {
+    display:flex;
+    min-height:600px;
+    align-items:center;
+    justify-content:center;
+    background-image: url("../images/petra.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+#section_bg .title{
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    padding:30px;
+    font-size: 50px;
+    word-wrap: wrap;
+}
+
+/* section third:: section_cards */
+
+#section_cards {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding:30px 0px;
+    min-height:600px;
+    background:  
+        linear-gradient(
+            rgba(0, 0, 0, 0.45), 
+            rgba(30, 0, 0, 0.45)
+        ),
+        url('../images/cards_bg.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+      
+}
+
+#section_cards .card{
+    width:300px;
+    min-height:200px;
+    -webkit-transition: min-height 0.8s;
+	-moz-transition: min-height 0.8s;
+	transition: min-height 0.8s;
+}
+
+#section_cards .card_info{
+    display:none;
+    -webkit-transition: min-height 0.8s;
+	-moz-transition: min-height 0.8s;
+	transition: min-height 0.8s;
+}
+
+#section_cards .card:nth-child(1) {
+    background:
+        url('../images/card_1.jpg');
+    background-repeat:no-repeat;
+    background-color:#b2bbc7;
+}
+#section_cards .card:nth-child(2) {
+    background:
+        url('../images/card_2.jpg'); 
+    background-color:#b2bbc7;
+    background-repeat:no-repeat;
+}
+#section_cards .card:nth-child(3) {
+    background:
+        url('../images/card_3.jpg');
+    background-color:#b2bbc7;
+    background-repeat:no-repeat;
+}
+#section_cards .card:nth-child(4) {
+    background:
+        url('../images/card_4.jpg');
+    background-color:#b2bbc7;
+    background-repeat:no-repeat;
+}
+
+/* hover */
+#section_cards .card:hover{
+    min-height:300px;
+}
+#section_cards .card:hover .card_info{
+    display:block;
+    margin-top:220px;
+}
+
+/* section forth:: section_footer */
+
+
+/* media query example :) */
+@media only screen and (max-width: 600px) {
+    body {
+      padding:20px;
+    }
+}
